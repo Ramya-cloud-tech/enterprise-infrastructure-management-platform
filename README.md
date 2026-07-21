@@ -1,48 +1,74 @@
 # Enterprise Infrastructure Management Platform
 
-Enterprise Infrastructure Management Platform is a full-stack administration portal developed to manage a Windows Server lab environment through a modern web interface.
+Enterprise Infrastructure Management Platform is a full-stack web application that simulates an enterprise IT administration portal for managing Windows Server infrastructure through a modern browser-based interface.
 
-The platform integrates Active Directory administration, PowerShell automation, SMB file services, infrastructure monitoring, and operational reporting into a unified dashboard.
+The platform integrates Active Directory administration, PowerShell automation, SMB file services, infrastructure monitoring, and operational reporting into a centralized enterprise dashboard.
 
 ---
 
-## Project Overview
+# Project Overview
 
-This project demonstrates practical enterprise infrastructure engineering by combining Windows Server administration with modern web technologies.
+This project demonstrates practical enterprise infrastructure engineering by combining Windows Server administration with modern full-stack web technologies.
 
-The application provides a centralized interface for managing Active Directory users, monitoring enterprise infrastructure, viewing file services, executing administrative operations, and generating operational reports.
+The platform provides a centralized interface for:
+
+- Active Directory administration
+- Windows Server management
+- Infrastructure monitoring
+- SMB file services
+- Administrative reporting
+- Enterprise operational dashboards
+
+The objective of this project is to simulate the type of internal administration portal commonly used by enterprise Infrastructure Engineers and IT Operations teams.
+
+---
+
+# Technical Highlights
+
+- Full-stack enterprise administration portal
+- Built using Next.js App Router and TypeScript
+- Express.js REST API backend
+- PowerShell automation layer
+- Windows Server 2022 integration
+- Active Directory administration
+- SMB File Share monitoring
+- Enterprise dashboard with operational metrics
+- Modern responsive UI
+- Modular architecture
 
 ---
 
 # Features
 
-## Dashboard
+## Enterprise Dashboard
 
 - Enterprise Operations Center
 - Live infrastructure monitoring
 - Infrastructure health metrics
 - Department analytics
 - Activity timeline
-- Infrastructure topology
+- Infrastructure topology visualization
 - Service availability monitoring
+- Administrative notifications
 
 ---
 
 ## Active Directory
 
 - View directory users
-- Create new user accounts
-- Enable and disable accounts
+- Create directory users
+- Enable user accounts
+- Disable user accounts
 - Unlock user accounts
 - Reset passwords
-- Department management
+- Department assignment
 - Identity monitoring
 
 ---
 
 ## File Server
 
-- SMB share discovery
+- SMB Share discovery
 - Share monitoring
 - Storage statistics
 - Windows Server integration
@@ -56,6 +82,7 @@ The application provides a centralized interface for managing Active Directory u
 - Operational reporting
 - Infrastructure summaries
 - Activity history
+- Administrative evidence generation
 
 ---
 
@@ -63,32 +90,39 @@ The application provides a centralized interface for managing Active Directory u
 
 - Environment configuration
 - Infrastructure information
-- System refresh controls
+- Refresh controls
+- System configuration
 
 ---
 
 # Technology Stack
 
-### Frontend
+## Frontend
 
 - Next.js
 - React
 - TypeScript
 - Tailwind CSS
 
-### Backend
+---
+
+## Backend
 
 - Express.js
 - REST API
 
-### Infrastructure
+---
+
+## Infrastructure
 
 - Windows Server 2022
 - Active Directory Domain Services (AD DS)
 - PowerShell
 - SMB File Services
 
-### Development Tools
+---
+
+## Development Tools
 
 - Git
 - GitHub
@@ -99,36 +133,75 @@ The application provides a centralized interface for managing Active Directory u
 # System Architecture
 
 ```text
-Next.js Administration Portal
-            │
-            ▼
-      Express REST API
-            │
-            ▼
-  PowerShell Automation Layer
-            │
-            ▼
-     Windows Server 2022
-            │
-     ┌──────┴──────────┐
-     ▼                 ▼
-Active Directory    SMB File Server
+          Next.js Administration Portal
+                     │
+                     ▼
+             Express REST API
+                     │
+                     ▼
+        PowerShell Automation Layer
+                     │
+                     ▼
+            Windows Server 2022
+                     │
+          ┌──────────┴──────────┐
+          ▼                     ▼
+ Active Directory        SMB File Server
 ```
 
 ---
 
-# Key Capabilities
+# Screenshots
 
-- Enterprise Active Directory administration
-- Windows Server automation using PowerShell
-- Secure REST API integration
-- Enterprise dashboard with live operational metrics
-- SMB file service management
-- Administrative audit reporting
-- Department analytics
-- Infrastructure monitoring
-- Identity management
-- Full-stack application development
+## Enterprise Dashboard
+
+![Dashboard](public/images/dashboard/dashboard-home.png)
+
+---
+
+## Live Infrastructure Topology
+
+![Topology](public/images/dashboard/topology1.png)
+
+![Topology](public/images/dashboard/topology2.png)
+
+![Topology](public/images/dashboard/topology3.png)
+
+---
+
+## Administrative Activity
+
+![Activity](public/images/dashboard/activity.png)
+
+---
+
+## Active Directory
+
+*(Screenshots located in `public/images/active-directory/`)*
+
+---
+
+## User Management
+
+*(Screenshots located in `public/images/users/`)*
+
+---
+
+## File Server
+
+*(Screenshots located in `public/images/file-server/`)*
+
+---
+
+## Reports
+
+*(Screenshots located in `public/images/reports/`)*
+
+---
+
+## Settings
+
+*(Screenshots located in `public/images/settings/`)*
 
 ---
 
@@ -136,15 +209,16 @@ Active Directory    SMB File Server
 
 ```text
 app/
+│
 ├── api/
 ├── components/
 ├── users/
 ├── file-server/
 ├── reports/
 ├── settings/
-
+│
 docs/
-
+│
 public/
 └── images/
     ├── dashboard/
@@ -163,44 +237,58 @@ LICENSE
 
 ---
 
+# Running the Project
+
+```bash
+npm install
+
+npm run dev
+```
+
+Open:
+
+```
+http://localhost:3000
+```
+
+> **Note:** Certain administrative functions require a configured Windows Server laboratory environment with Active Directory and the accompanying Express.js and PowerShell backend services.
+
+---
+
 # Skills Demonstrated
 
+- Enterprise Infrastructure Administration
 - Active Directory Administration
 - Windows Server Administration
 - PowerShell Automation
-- Enterprise Infrastructure Management
 - REST API Development
-- Full-Stack Development
+- Full-Stack Web Development
 - Infrastructure Monitoring
 - Identity Management
+- SMB File Service Administration
 - TypeScript Development
 - Next.js Development
 - Git Version Control
 
 ---
 
-# Repository Contents
+# Future Enhancements
 
-| Document | Description |
-|----------|-------------|
-| README.md | Project overview and technical documentation |
-| CHANGELOG.md | Version history |
-| SECURITY.md | Security policy |
-| CONTRIBUTING.md | Contribution guidelines |
-| LICENSE | Project license |
-
----
-
-# Author
-
-**Ramya**
-
-ITE Information Technology Systems & Networks
-
-Enterprise Infrastructure Engineering Portfolio
+- Azure Active Directory Integration
+- Microsoft Graph API
+- Azure Deployment
+- Docker Containerization
+- SQL Server Integration
+- Role-Based Access Control (RBAC)
+- Multi-Factor Authentication (MFA)
+- CI/CD Pipelines
+- Infrastructure Monitoring Dashboard
+- Email Notifications
 
 ---
 
-## Disclaimer
+# Disclaimer
 
-This project was developed for educational and portfolio purposes using a Windows Server laboratory environment. It is intended to demonstrate enterprise infrastructure engineering concepts, Active Directory administration, PowerShell automation, and full-stack application development.
+This project was developed for educational and portfolio purposes using a Windows Server laboratory environment. It demonstrates enterprise infrastructure engineering concepts including Active Directory administration, Windows Server management, PowerShell automation, SMB file services, REST API development, and modern full-stack web application architecture.
+
+The project does not connect to or manage any production enterprise infrastructure.
