@@ -1,7 +1,9 @@
 # Enterprise Infrastructure Management Platform
 
 Enterprise Infrastructure Management Platform is a full-stack web application that simulates an enterprise IT administration portal for managing Windows Server infrastructure through a modern browser-based interface.
+Enterprise Infrastructure Management Platform is a full-stack web application that simulates an enterprise IT administration portal for managing Windows Server infrastructure through a modern browser-based interface.
 
+The platform integrates Active Directory administration, PowerShell automation, SMB file services, infrastructure monitoring, and operational reporting into a centralized enterprise dashboard.
 The platform integrates Active Directory administration, PowerShell automation, SMB file services, infrastructure monitoring, and operational reporting into a centralized enterprise dashboard.
 
 ---
@@ -151,57 +153,18 @@ The objective of this project is to simulate the type of internal administration
 
 ---
 
-# Screenshots
+# Key Capabilities
 
-## Enterprise Dashboard
-
-![Dashboard](public/images/dashboard/dashboard-home.png)
-
----
-
-## Live Infrastructure Topology
-
-![Topology](public/images/dashboard/topology1.png)
-
-![Topology](public/images/dashboard/topology2.png)
-
-![Topology](public/images/dashboard/topology3.png)
-
----
-
-## Administrative Activity
-
-![Activity](public/images/dashboard/activity.png)
-
----
-
-## Active Directory
-
-*(Screenshots located in `public/images/active-directory/`)*
-
----
-
-## User Management
-
-*(Screenshots located in `public/images/users/`)*
-
----
-
-## File Server
-
-*(Screenshots located in `public/images/file-server/`)*
-
----
-
-## Reports
-
-*(Screenshots located in `public/images/reports/`)*
-
----
-
-## Settings
-
-*(Screenshots located in `public/images/settings/`)*
+- Enterprise Active Directory administration
+- Windows Server automation using PowerShell
+- Secure REST API integration
+- Enterprise dashboard with live operational metrics
+- SMB file service management
+- Administrative audit reporting
+- Department analytics
+- Infrastructure monitoring
+- Identity management
+- Full-stack application development
 
 ---
 
@@ -289,6 +252,4 @@ http://localhost:3000
 
 # Disclaimer
 
-This project was developed for educational and portfolio purposes using a Windows Server laboratory environment. It demonstrates enterprise infrastructure engineering concepts including Active Directory administration, Windows Server management, PowerShell automation, SMB file services, REST API development, and modern full-stack web application architecture.
-
-The project does not connect to or manage any production enterprise infrastructure.
+This project was developed for educational and portfolio purposes using a Windows Server laboratory environment. It is intended to demonstrate enterprise infrastructure engineering concepts, Active Directory administration, PowerShell automation, and full-stack application development.
