@@ -1,42 +1,82 @@
 # Enterprise Infrastructure Management Platform
 
-Enterprise Infrastructure Management Platform is a full-stack web application that simulates an enterprise IT administration portal for managing Windows Server infrastructure through a modern browser-based interface.
-Enterprise Infrastructure Management Platform is a full-stack web application that simulates an enterprise IT administration portal for managing Windows Server infrastructure through a modern browser-based interface.
+Enterprise-grade infrastructure administration platform built with **Next.js**, **TypeScript**, **Express.js**, **Windows Server 2022**, **Active Directory**, and **PowerShell Automation**.
 
-The platform integrates Active Directory administration, PowerShell automation, SMB file services, infrastructure monitoring, and operational reporting into a centralized enterprise dashboard.
-The platform integrates Active Directory administration, PowerShell automation, SMB file services, infrastructure monitoring, and operational reporting into a centralized enterprise dashboard.
+The platform simulates an internal enterprise administration portal used by Infrastructure Engineers to manage Active Directory identities, Windows Server resources, SMB file services, operational reporting, and infrastructure monitoring from a modern web interface.
 
 ---
 
-# Project Overview
+## Enterprise Overview
 
-This project demonstrates practical enterprise infrastructure engineering by combining Windows Server administration with modern full-stack web technologies.
+Modern enterprise environments often require administrators to work across multiple Microsoft Management Consoles, PowerShell terminals, and server interfaces.
 
-The platform provides a centralized interface for:
+This project centralizes those administration tasks into a single dashboard that provides:
 
 - Active Directory administration
 - Windows Server management
 - Infrastructure monitoring
-- SMB file services
+- SMB File Server management
+- PowerShell automation
 - Administrative reporting
-- Enterprise operational dashboards
+- Identity operations
 
-The objective of this project is to simulate the type of internal administration portal commonly used by enterprise Infrastructure Engineers and IT Operations teams.
+The project was developed using a Windows Server laboratory environment to demonstrate practical enterprise infrastructure engineering.
 
 ---
 
-# Technical Highlights
+# Screenshots
 
-- Full-stack enterprise administration portal
-- Built using Next.js App Router and TypeScript
-- Express.js REST API backend
-- PowerShell automation layer
-- Windows Server 2022 integration
-- Active Directory administration
-- SMB File Share monitoring
-- Enterprise dashboard with operational metrics
-- Modern responsive UI
-- Modular architecture
+## Enterprise Operations Center
+
+![Dashboard](public/images/dashboard/dashboard-home.png)
+
+---
+
+## Live Infrastructure Topology
+
+![Topology](public/images/dashboard/topology1.png)
+
+---
+
+## Administrator Actions
+
+![Administrator Actions](public/images/dashboard/admin-actions.png)
+
+---
+
+## Active Directory Operations
+
+![Active Directory](public/images/active-directory/Active-Directory.png)
+
+---
+
+## Directory User Management
+
+![Users](public/images/users/users.png)
+
+---
+
+## User Provisioning
+
+![Create User](public/images/users/create-users.png)
+
+---
+
+## SMB File Services
+
+![File Server](public/images/file-server/Screenshot%202026-07-21%20051012.png)
+
+---
+
+## Administrative Reports
+
+![Reports](public/images/reports/Screenshot%202026-07-21%20051648.png)
+
+---
+
+## Platform Configuration
+
+![Settings](public/images/settings/Screenshot%202026-07-21%20052207.png)
 
 ---
 
@@ -45,25 +85,27 @@ The objective of this project is to simulate the type of internal administration
 ## Enterprise Dashboard
 
 - Enterprise Operations Center
-- Live infrastructure monitoring
-- Infrastructure health metrics
-- Department analytics
-- Activity timeline
-- Infrastructure topology visualization
+- Infrastructure health monitoring
 - Service availability monitoring
+- Department analytics
+- Infrastructure topology
 - Administrative notifications
+- Identity statistics
+- Operational metrics
+- Infrastructure status monitoring
 
 ---
 
 ## Active Directory
 
 - View directory users
-- Create directory users
-- Enable user accounts
-- Disable user accounts
-- Unlock user accounts
+- Create new users
+- Enable accounts
+- Disable accounts
+- Unlock accounts
 - Reset passwords
 - Department assignment
+- Organizational Unit management
 - Identity monitoring
 
 ---
@@ -71,9 +113,9 @@ The objective of this project is to simulate the type of internal administration
 ## File Server
 
 - SMB Share discovery
-- Share monitoring
-- Storage statistics
 - Windows Server integration
+- Storage statistics
+- Share monitoring
 - File service overview
 
 ---
@@ -83,8 +125,8 @@ The objective of this project is to simulate the type of internal administration
 - Administrative audit logs
 - Operational reporting
 - Infrastructure summaries
-- Activity history
-- Administrative evidence generation
+- Administrative activity
+- Evidence generation
 
 ---
 
@@ -92,8 +134,29 @@ The objective of this project is to simulate the type of internal administration
 
 - Environment configuration
 - Infrastructure information
-- Refresh controls
 - System configuration
+- Refresh controls
+
+---
+
+# Enterprise Architecture
+
+```text
+                     Next.js Administration Portal
+                                  │
+                                  ▼
+                        Express REST API
+                                  │
+                                  ▼
+                    PowerShell Automation Layer
+                                  │
+                                  ▼
+                       Windows Server 2022
+                                  │
+                   ┌──────────────┴──────────────┐
+                   ▼                             ▼
+          Active Directory              SMB File Services
+```
 
 ---
 
@@ -101,7 +164,7 @@ The objective of this project is to simulate the type of internal administration
 
 ## Frontend
 
-- Next.js
+- Next.js (App Router)
 - React
 - TypeScript
 - Tailwind CSS
@@ -111,60 +174,26 @@ The objective of this project is to simulate the type of internal administration
 ## Backend
 
 - Express.js
-- REST API
+- REST APIs
+- JSON APIs
 
 ---
 
 ## Infrastructure
 
 - Windows Server 2022
-- Active Directory Domain Services (AD DS)
+- Active Directory Domain Services
 - PowerShell
-- SMB File Services
+- SMB File Server
+- Windows Administration
 
 ---
 
-## Development Tools
+## Development
 
+- Visual Studio Code
 - Git
 - GitHub
-- Visual Studio Code
-
----
-
-# System Architecture
-
-```text
-          Next.js Administration Portal
-                     │
-                     ▼
-             Express REST API
-                     │
-                     ▼
-        PowerShell Automation Layer
-                     │
-                     ▼
-            Windows Server 2022
-                     │
-          ┌──────────┴──────────┐
-          ▼                     ▼
- Active Directory        SMB File Server
-```
-
----
-
-# Key Capabilities
-
-- Enterprise Active Directory administration
-- Windows Server automation using PowerShell
-- Secure REST API integration
-- Enterprise dashboard with live operational metrics
-- SMB file service management
-- Administrative audit reporting
-- Department analytics
-- Infrastructure monitoring
-- Identity management
-- Full-stack application development
 
 ---
 
@@ -172,16 +201,16 @@ The objective of this project is to simulate the type of internal administration
 
 ```text
 app/
-│
 ├── api/
 ├── components/
 ├── users/
+├── active-directory/
 ├── file-server/
 ├── reports/
 ├── settings/
-│
+
 docs/
-│
+
 public/
 └── images/
     ├── dashboard/
@@ -200,21 +229,33 @@ LICENSE
 
 ---
 
-# Running the Project
+# Getting Started
+
+Clone the repository
+
+```bash
+git clone https://github.com/Ramya-cloud-tech/enterprise-infrastructure-management-platform.git
+```
+
+Install dependencies
 
 ```bash
 npm install
+```
 
+Start the application
+
+```bash
 npm run dev
 ```
 
-Open:
+Open
 
 ```
 http://localhost:3000
 ```
 
-> **Note:** Certain administrative functions require a configured Windows Server laboratory environment with Active Directory and the accompanying Express.js and PowerShell backend services.
+> **Note:** Administrative operations require a configured Windows Server laboratory environment with Active Directory, PowerShell automation, and the Express.js backend services.
 
 ---
 
@@ -223,33 +264,52 @@ http://localhost:3000
 - Enterprise Infrastructure Administration
 - Active Directory Administration
 - Windows Server Administration
+- Identity Management
 - PowerShell Automation
 - REST API Development
 - Full-Stack Web Development
 - Infrastructure Monitoring
-- Identity Management
-- SMB File Service Administration
-- TypeScript Development
-- Next.js Development
+- SMB File Server Administration
+- Enterprise Dashboard Development
+- Next.js
+- React
+- TypeScript
 - Git Version Control
 
 ---
 
-# Future Enhancements
+# Future Improvements
 
 - Azure Active Directory Integration
 - Microsoft Graph API
-- Azure Deployment
-- Docker Containerization
-- SQL Server Integration
 - Role-Based Access Control (RBAC)
 - Multi-Factor Authentication (MFA)
+- Docker Deployment
 - CI/CD Pipelines
-- Infrastructure Monitoring Dashboard
+- Azure Deployment
+- SQL Server Integration
 - Email Notifications
+- Live Infrastructure Monitoring
+- Remote Server Administration
+
+---
+
+# Repository Contents
+
+| Document | Purpose |
+|----------|---------|
+| README.md | Project documentation |
+| CHANGELOG.md | Version history |
+| SECURITY.md | Security policy |
+| CONTRIBUTING.md | Contribution guidelines |
+| LICENSE | MIT License |
 
 ---
 
 # Disclaimer
 
-This project was developed for educational and portfolio purposes using a Windows Server laboratory environment. It is intended to demonstrate enterprise infrastructure engineering concepts, Active Directory administration, PowerShell automation, and full-stack application development.
+This project was developed for educational and portfolio purposes using a Windows Server laboratory environment.
+
+It demonstrates enterprise infrastructure engineering concepts including Active Directory administration, Windows Server management, PowerShell automation, SMB File Server administration, REST API development, and modern full-stack application architecture.
+
+The project does not connect to or manage any production enterprise infrastructure.
